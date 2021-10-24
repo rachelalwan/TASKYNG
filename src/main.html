@@ -2,6 +2,13 @@
     <head>
         <meta charset="UTF-8">
         <link rel='stylesheet' href='style.css'>
+        <style>
+            #notes-section {
+                position: fixed;
+                bottom: 10px;
+                right: 10px;
+            }
+        </style>
     </head>
     <body>
         <div class="header">
@@ -21,6 +28,16 @@
                     <ul></ul>
                     <input type="text" placeholder="Add a Task">
                     <button>+ New Task</button>
+                </div>
+            </div>
+            <div>
+                <div id="notes-section">
+                    <h2 align="right">Notes</h2>
+                    <ul></ul>
+                    <form>
+                        <textarea id="notes-text" style="overflow:auto;resize:none" rows="30" cols="50">
+                        </textarea>
+                    </form>
                 </div>
             </div>
         </section>
