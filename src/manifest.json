@@ -1,17 +1,8 @@
 {
-  "name": "Hello Extensions",
-  "description": "Base Level Extension",
+  "name": "TASKYNG",
+  "description": "Keep track of your tasks!",
   "version": "1.0",
   "manifest_version": 3,
-  "commands": {
-    "_execute_action": {
-      "suggested_key": {
-        "default": "Ctrl+Shift+F",
-        "mac": "MacCtrl+Shift+F"
-      },
-      "description": "Opens hello.html"
-    }
-  },
   "background": {
     "service_worker": "background.js"
   },

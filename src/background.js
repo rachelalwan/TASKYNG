@@ -9,6 +9,6 @@ chrome.action.onClicked.addListener((tab) => {
 });
 
 function showHello(info, tab) {
-  let url = chrome.runtime.getURL("hello.html");
+  let url = chrome.runtime.getURL("main.html");
   chrome.tabs.create({ url });
 }
