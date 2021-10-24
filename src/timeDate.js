@@ -19,5 +19,7 @@ function showDate() {
     document.getElementById("date").innerHTML = date;
 }
 
+showTime();
+showDate();
 setInterval(showTime,1000);
 setInterval(showDate, 1000);
