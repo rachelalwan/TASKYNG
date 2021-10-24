@@ -4,18 +4,19 @@ body {
 }
 
 #time {
-    padding-top: 50px;
-    text-align: center;
+    padding-top: 20px;
+    alignment: center;
     color: #36454F;
-    font-size: 70px;
+    font-size: 40px;
     font-family: Helvetica;
+    text-align: center;
 }
 
 #date {
     padding: 5px;
     text-align: center;
     color: #36454F;
-    font-size: 25px;
+    font-size: 30px;
     font-family: Helvetica;
 }
 
@@ -24,14 +25,19 @@ body {
     color: #36454F;
     font-size: 45px;
     font-family: Helvetica;
+    vert-align: top;
 }
 
 #habitSection {
     float: right;
 }
 
+#main_habit_section {
+    margin-right: fill;
+}
+
 #newHabit {
-    width: 300px;
+    width: 360px;
     height: 30px;
     font-size: 20px;
 }
@@ -40,6 +46,26 @@ body {
     height: 30px;
     font-family: Helvetica;
     font-size: 20px;
+}
+
+#tasks {
+    font-family: Helvetica;
+    font-size: 25px;
+}
+
+#TaskHeader {
+    font-family: Helvetica;
+    font-size: 40px;
+}
+
+#addTask {
+    font-family: Helvetica;
+    font-size: 25px;
+}
+
+#clearButton {
+    font-family: Helvetica;
+    font-size: 30px;
 }
 
 #habits {
@@ -63,6 +89,13 @@ body {
     text-align: right;
 }
 
+#notesText {
+    font-size: 25px;
+    padding-bottom: 0;
+    padding-top: 0;
+    font-family: Helvetica;
+}
+
 .container {
     font-size: 20px;
     font-family: Helvetica;
@@ -71,22 +104,6 @@ body {
 body {
     background-color: whitesmoke;
     background-size: cover;
-}
-
-#time {
-    padding-top: 50px;
-    text-align: center;
-    color: #36454F;
-    font-size: 100px;
-    font-family: Helvetica;
-}
-
-#date {
-    padding: 5px;
-    text-align: center;
-    color: #36454F;
-    font-size: 45px;
-    font-family: Helvetica;
 }
 
 #task-section {
@@ -104,7 +121,7 @@ body {
 }
 
 .task span {
-  margin-left: 10px;
+    margin-left: 10px;
 }
 
 .task-input {
@@ -141,4 +158,12 @@ body {
 .clear-btn {
   background-color: whitesmoke;
   border: none;
+}
+
+.parent {
+}
+
+.child {
+    display: inline-block;
+
 }

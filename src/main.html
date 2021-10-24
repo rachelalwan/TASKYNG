@@ -11,53 +11,61 @@
         </style>
     </head>
     <body>
-        <div class="header">
-            <div id="time"></div>
-            <script src="timeDate.js"></script>
-        </div>
 
-        <h1>
-            <div id="date"></div>
-            <script src="timeDate.js"></script>
-        </h1>
+    <h1>
+        <div id="time"></div>
+        <script src="timeDate.js"></script>
+    </h1>
 
-        <section>
-            <div>
-                <div id="task-section">
-                    <div class="header">
-                        <h2>Tasks</h2>
-                        <button class="clear-btn">Clear</button>
+    <h1>
+        <div id="date"></div>
+        <script src="timeDate.js"></script>
+    </h1>
+
+    <div class="parent">
+        <div class="child" id="task-section">
+            <section>
+                <div>
+                    <div>
+                        <div class="header">
+                            <h2 id="taskHeader">Tasks</h2>
+                            <button class="clear-btn" id="clearButton">Clear</button>
+                        </div>
+                        <ol id="tasks"></ol>
+                        <button class="add-btn">+</button>
+                        <input class="task-input" type="text" placeholder="Add a task..." id="addTask">
                     </div>
-                    <ol></ol>
-                    <button class="add-btn">+</button>
-                    <input class="task-input" type="text" placeholder="Add a Task">
                 </div>
-            </div>
-            <div>
-                <div id="notes-section">
-                    <h2 align="right">Notes</h2>
-                    <ul></ul>
-                    <form>
-                        <textarea id="notes-text" style="overflow:auto;resize:none" rows="30" cols="50">
+                <div>
+                    <div id="notes-section">
+                        <h2 align="right" id="notesText">Notes</h2>
+                        <ul></ul>
+                        <form>
+                        <textarea id="notes-text" style="overflow:auto;resize:none" rows="20" cols="50">
                         </textarea>
-                    </form>
+                        </form>
+                    </div>
                 </div>
+                <script src="index.js"></script>
+            </section>
+        </div>
+        <div class="child" id="habitSection">
+            <div>
+                <section>
+                    <div id="habitTracker"></div>
+
+                    <input type="text" placeholder="New habit..." id="newHabit">
+                    <button id="habitButton"> Add! </button>
+
+                    <div id="daysOfWeek">S M T W  Th F &nbsp;</div>
+
+                    <ul id="habits">
+                    </ul>
+
+                    <script src="habitTracker.js"></script>
+                </section>
             </div>
-        </section>
-
-    <section id="habitSection">
-        <div id="habitTracker"></div>
-
-        <input type="text" placeholder="New habit..." id="newHabit">
-        <button id="habitButton"> Add! </button>
-
-        <div id="daysOfWeek">S M T W  Th F &nbsp;</div>
-
-        <ul id="habits">
-        </ul>
-
-        <script src="habitTracker.js"></script>
-    </section>
-
+        </div>
+    </div>
     </body>
 </html>
