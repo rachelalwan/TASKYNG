@@ -67,3 +67,78 @@ body {
     font-size: 20px;
     font-family: Helvetica;
 }
+
+body {
+    background-color: whitesmoke;
+    background-size: cover;
+}
+
+#time {
+    padding-top: 50px;
+    text-align: center;
+    color: #36454F;
+    font-size: 100px;
+    font-family: Helvetica;
+}
+
+#date {
+    padding: 5px;
+    text-align: center;
+    color: #36454F;
+    font-size: 45px;
+    font-family: Helvetica;
+}
+
+#task-section {
+  margin: 10px;
+  width: 30%;
+}
+
+#task-section ol {
+  list-style-type: none;
+  padding: 0;
+}
+
+.task {
+  font-size: larger;
+}
+
+.task span {
+  margin-left: 10px;
+}
+
+.task-input {
+  height: 30px;
+  border: none;
+  margin-left: 10px;
+  background-color: whitesmoke;
+}
+
+.task-input:focus {
+  outline: none;
+}
+
+.add-btn {
+  background-color: black;
+  color: whitesmoke;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  font-size: x-large;
+  border: none;
+}
+
+.finished {
+  color: grey;
+  text-decoration: line-through;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.clear-btn {
+  background-color: whitesmoke;
+  border: none;
+}
